@@ -1,0 +1,35 @@
+.category {
+	&:hover,
+	&:focus-within {
+		> div img {
+			filter: invert(33%) sepia(99%) saturate(5838%) hue-rotate(328deg) brightness(97%) contrast(100%);
+		}
+
+		p {
+			color: #f71963;
+		}
+	}
+
+	> div {
+		height: 8rem;
+		width: 8rem;
+		background-color: #f4f4f4;
+		padding: 2rem;
+		border-radius: 0.75rem;
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	p {
+		text-align: center;
+		margin-top: 1rem;
+		font-size: 0.875rem;
+		font-weight: 500;
+		color: #4e4e4e;
+		transition: color 0.2s;
+	}
+}

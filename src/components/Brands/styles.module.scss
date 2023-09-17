@@ -1,0 +1,60 @@
+.brands {
+	padding: 1rem;
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+
+	.title {
+		margin: 0 auto;
+		width: 100%;
+		color: #f71963;
+		margin-top: 1rem;
+	}
+
+	.brandsContainer {
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+		display: flex;
+		align-items: center;
+
+		button {
+			display: none;
+
+			@media screen and (min-width: 768px) {
+				display: block;
+			}
+
+			&:first-child {
+				transform: rotate(180deg);
+			}
+		}
+
+		.carousel {
+			display: flex;
+			column-gap: 2rem;
+			overflow-x: auto;
+			padding: 1rem;
+			scroll-behavior: smooth;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+
+			.brand {
+				width: 10rem;
+				height: 10rem;
+				border-radius: 100%;
+				box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 1rem;
+				flex-shrink: 0;
+
+				> img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.products {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.title {
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+		color: #f71963;
+		margin-top: 1rem;
+	}
+
+	.seeAll {
+		color: #3f3f40;
+		font-size: 0.75rem;
+		font-weight: 700;
+		margin-top: 0.75rem;
+	}
+
+	.productCards {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		row-gap: 1rem;
+		padding: 1rem;
+		column-gap: 2rem;
+		margin: 2rem auto 0 auto;
+		max-width: 1200px;
+		width: 100%;
+
+		@media screen and (min-width: 768px) {
+			flex-direction: row;
+		}
+	}
+}

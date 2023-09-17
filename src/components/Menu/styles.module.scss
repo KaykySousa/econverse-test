@@ -1,0 +1,69 @@
+.menuOverlay {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	background: rgb(0, 0, 0, 0.6);
+	width: 100%;
+	min-height: 100vh;
+	transition: left 500ms ease-in-out;
+	z-index: 50;
+
+	&.open {
+		left: 0;
+	}
+}
+
+.menu {
+	min-height: 100vh;
+	width: 80%;
+
+	padding: 1.5rem 1rem;
+
+	display: flex;
+	flex-direction: column;
+
+	background-color: #f71963;
+
+	.closeButton {
+		color: #fff;
+
+		align-self: flex-end;
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+}
+
+.nav {
+	flex: 1;
+	display: flex;
+	align-items: center;
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.5rem;
+		list-style: none;
+		width: 100%;
+
+		a {
+			display: block;
+			color: #fff;
+			font-size: 1.25rem;
+			font-weight: 600;
+			text-decoration: none;
+			padding: 0.5rem;
+			transition: opacity 200ms;
+
+			&:hover,
+			&:focus {
+				opacity: 0.8;
+			}
+
+			img {
+				filter: brightness(0) invert(1);
+				vertical-align: middle;
+				margin-left: 0.5rem;
+			}
+		}
+	}
+}

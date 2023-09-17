@@ -1,0 +1,10 @@
+.categories {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 2.5rem auto;
+	max-width: 1200px;
+	padding: 0 1rem;
+	gap: 2.5rem;
+	width: 100%;
+}

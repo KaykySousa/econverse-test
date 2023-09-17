@@ -1,0 +1,52 @@
+.product {
+	max-width: 17rem;
+	width: 100%;
+	padding: 1rem;
+	border-radius: 10px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+	color: #3f3f40;
+	transition: transform 0.2s;
+	cursor: pointer;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+
+	img {
+		margin-bottom: auto;
+		width: 100%;
+	}
+
+	.name {
+		margin-top: 1rem;
+		font-weight: 300;
+	}
+
+	.oldPrice {
+		display: inline-block;
+		text-decoration: line-through;
+		margin-top: 1rem;
+		color: #808080;
+	}
+
+	.price {
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin-top: 0.25rem;
+	}
+
+	.installments {
+		margin-top: 0.5rem;
+		font-size: 0.75rem;
+	}
+
+	.shipping {
+		margin-top: 0.5rem;
+		font-size: 0.75rem;
+		color: #f71963;
+	}
+
+	button {
+		width: 100%;
+		margin-top: 1rem;
+	}
+}
